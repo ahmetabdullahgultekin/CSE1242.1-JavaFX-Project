@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="creditsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <cursor>
+      <Cursor fx:constant="OPEN_HAND" />
+   </cursor>
+   <children>
+      <Ellipse fx:id="ellipseBlue" centerX="200.0" centerY="200.0" fill="#ffffff00" radiusX="150.0" radiusY="30.0" rotate="90.0" stroke="BLUE" strokeLineCap="BUTT" strokeWidth="2.0" />
+      <Ellipse fx:id="ellipseGreen" centerX="200.0" centerY="200.0" fill="#2b070700" radiusX="150.0" radiusY="30.0" rotate="45.0" stroke="#04bf1d" strokeWidth="2.0" />
+      <Ellipse fx:id="ellipseRed" centerX="200.0" centerY="200.0" fill="#ffffff00" radiusX="150.0" radiusY="30.0" stroke="#f20808" strokeWidth="2.0" />
+      <Ellipse fx:id="ellipseYellow" centerX="200.0" centerY="200.0" fill="#ffffff00" radiusX="150.0" radiusY="30.0" rotate="135.0" stroke="#fffa00" strokeLineCap="BUTT" strokeWidth="2.0" />
+      <Circle fx:id="circleOrange" centerX="100.0" centerY="300.0" fill="#ff7d00" radius="6.0" strokeType="INSIDE" style="-fx-fill: white;" />
+      <Circle fx:id="circleWhite" centerX="300.0" centerY="300.0" fill="WHITE" radius="6.0" strokeType="INSIDE" style="-fx-fill: cyan;" />
+      <Circle fx:id="circleTurquoise" centerX="100.0" centerY="100.0" fill="#00f4ff" radius="6.0" strokeType="INSIDE" style="-fx-fill: magenta;" />
+      <Circle fx:id="circlePink" centerX="300.0" centerY="100.0" fill="#f500ff" radius="6.0" strokeType="INSIDE" style="-fx-fill: pink;" />
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Developers" wrappingWidth="159.05517578125" x="120.0" y="400.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Ömer Deligöz" x="124.0" y="450.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Ahmet Abdullah Gültekin" x="61.0" y="500.0">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ComboBox fx:id="cboxLevel" layoutX="130.0" layoutY="475.0" onAction="#selectLevel" prefWidth="150.0" promptText="Select a Level" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="btPlay" layoutX="360.0" layoutY="460.0" mnemonicParsing="false" onAction="#playButton" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: black; -fx-font-size: 25; -fx-text-fill: white;" text="Play" textAlignment="JUSTIFY">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btMenuQuit" layoutX="360.0" layoutY="610.0" mnemonicParsing="false" onAction="#Quit" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: black; -fx-font-size: 25; -fx-text-fill: white;" text="Quit" textAlignment="JUSTIFY">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Ellipse fx:id="ellipseBlue" centerX="300.0" centerY="300.0" fill="#ffffff00" radiusX="200.0" radiusY="40.0" stroke="#0400ff" strokeLineCap="BUTT" strokeWidth="5.0" visible="false" />
+      <Ellipse fx:id="ellipseGreen" centerX="300.0" centerY="300.0" fill="#2b070700" radiusX="200.0" radiusY="40.0" rotate="90.0" stroke="#04bf1d" strokeType="INSIDE" strokeWidth="5.0" visible="false" />
+      <Ellipse fx:id="ellipseRed" centerX="300.0" centerY="300.0" fill="#ffffff00" radiusX="200.0" radiusY="40.0" rotate="45.0" stroke="#f20808" strokeType="INSIDE" strokeWidth="5.0" visible="false" />
+      <Ellipse fx:id="ellipseYellow" centerX="300.0" centerY="300.0" fill="#ffffff00" radiusX="200.0" radiusY="40.0" rotate="135.0" stroke="#fffa00" strokeLineCap="BUTT" strokeWidth="5.0" visible="false" />
+      <Circle fx:id="circleOrange" centerX="368.0" centerY="177.0" fill="#ff7d00" radius="10.0" strokeType="INSIDE" style="-fx-fill: orange;" />
+      <Circle fx:id="circleWhite" centerX="323.0" centerY="177.0" fill="WHITE" radius="10.0" strokeType="INSIDE" />
+      <Circle fx:id="circleTurquoise" centerX="277.0" centerY="177.0" fill="#00f4ff" radius="10.0" strokeType="INSIDE" style="-fx-fill: turquoise;" />
+      <Circle fx:id="circlePink" centerX="232.0" centerY="177.0" fill="#f500ff" radius="10.0" strokeType="INSIDE" style="-fx-fill: pink;" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="200.0" y="200.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="300.0" y="200.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="200.0" y="300.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" x="300.0" y="300.0" />
+      <Circle centerX="300.0" centerY="65.0" fill="DODGERBLUE" radius="16.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-fill: blue;" />
+      <Circle centerX="300.0" centerY="300.0" fill="#1f93ff00" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ColorPicker fx:id="colorPicker" layoutX="232.0" layoutY="130.0" />
+      <Button fx:id="btCredits" layoutX="360.0" layoutY="535.0" mnemonicParsing="false" onAction="#credits" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: black; -fx-font-size: 25; -fx-text-fill: white;" text="Credits" textAlignment="JUSTIFY">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 18;" text="Choose Ball Color" x="229.0" y="117.0" />
+      <Label fx:id="musicLabel" layoutX="441.0" layoutY="14.0" style="-fx-text-fill: red; -fx-font-size: 13;" text="Press 'M' to Pause Music" />
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</AnchorPane>
