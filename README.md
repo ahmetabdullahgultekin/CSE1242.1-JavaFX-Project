@@ -1,4 +1,4 @@
-# CSE1242.1-JavaFX-Project
+# CSE1242-JavaFX-Project
 Puzzle game project which is given in Marmara University.
 
 Made by students have school numbers 150121025 and 150120035.
